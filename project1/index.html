@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Clock</title>
+    <style>
+        body {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            /* background-color: #f0f0f0; */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            border: #260202 2px solid;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: bisque;
+        }
+        .clock {
+            font-size: 5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="clock">00:00:00</h1>
+    </div>
+    <audio src="tic-tac-27828.mp3" preload="auto"></audio>
+
+    <script>
+        const clockElement = document.querySelector('.clock');
+        const audioElement = document.querySelector('audio');
+
+        // function updateClock() {
+        //     const now = new Date();
+        //     // const hours = String(now.getHours()).padStart(2, '0');
+        //     // const minutes = String(now.getMinutes()).padStart(2, '0');
+        //     // const seconds = String(now.getSeconds()).padStart(2, '0');
+        //     // clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        //     clockElement.textContent = now.toLocaleTimeString();
+        // }
+        function updateClock() {
+            const now = new Date();
+
+            let options = {
+                timeZone: 'Asia/Kolkata',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                
+            };
+
+        //     clockElement.textContent = now.toLocaleTimeString();
+            clockElement.textContent = now.toLocaleTimeString('en-US', options);
+        }
+
+        setInterval(() => {
+            updateClock();
+            // audioElement.play();
+        }, 1000);
+
+        // Initialize clock immediately
+        updateClock();
+    </script>
+</body>
+</html>
