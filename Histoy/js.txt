@@ -1,0 +1,41 @@
+👍 Here’s a **short history of JavaScript**:
+
+1. **1995 – Birth**
+
+   * Created by **Brendan Eich** at Netscape in just **10 days**.
+   * First called **Mocha**, then renamed **LiveScript**, and finally **JavaScript** (marketing move to ride on Java’s popularity).
+
+2. **1996 – Microsoft enters**
+
+   * Microsoft made its own version called **JScript** for Internet Explorer.
+   * This caused big **compatibility issues** (browser wars).
+
+3. **1997 – Standardization**
+
+   * JavaScript was standardized by **ECMA International** as **ECMAScript (ES)**.
+   * ECMAScript 1 → the first official version.
+
+4. **2009 – Modern JavaScript**
+
+   * **ECMAScript 5 (ES5)** introduced → JSON, `Array.map`, `forEach`, strict mode.
+   * Big step toward modern web apps.
+
+5. **2015 – ES6 (Game Changer)**
+
+   * Added `let`, `const`, `arrow functions`, `classes`, `modules`, promises, template literals.
+   * This version made JavaScript a serious programming language for large applications.
+
+6. **2015+ – Yearly Updates**
+
+   * New features released **every year** (ES7, ES8, … ES2023).
+   * Added async/await, spread operator, optional chaining, etc.
+
+7. **Today**
+
+   * Runs in **browsers** + **servers (Node.js)** + **mobile (React Native)** + **desktop apps (Electron)**.
+   * Most popular language for **web development** and beyond.
+
+👉 In short:
+JavaScript started as a **small browser scripting tool** in 1995 and has grown into the **world’s most widely used programming language** powering the modern web.
+
+---
